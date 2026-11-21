@@ -1,5 +1,5 @@
 # Trace 12 ikon kota dari deck hal. 24 (baris garis marun di atas kertas) -> tools/ikon-trace.json
-# Sumber pg-*.jpg sudah dihapus (hemat storage). Ekstrak ulang: cd ../05-aset-brand/dari-deck && pdfimages -j ../../00-brief/deck-67coffee.pdf pg
+# Sumber gambar sudah dihapus dari VPS. Ambil ulang deck dari R2 mote-team berkas/65bec3cd-793b-47a2-9f62-3dab6c4c5360.pdf, lalu: mkdir -p ../05-aset-brand/dari-deck && cd ../05-aset-brand/dari-deck && pdfimages -j deck.pdf pg
 import subprocess,re,os,json
 from PIL import Image,ImageFilter
 SRC='../05-aset-brand/dari-deck/pg-023.jpg'

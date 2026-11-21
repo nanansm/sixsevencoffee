@@ -1,5 +1,5 @@
 # Trace angka "67" dari deck (hal. 27, kartu "Logo marun di atas kertas dulang") jadi path SVG
-# Sumber pg-*.jpg sudah dihapus (hemat storage). Ekstrak ulang: cd ../05-aset-brand/dari-deck && pdfimages -j ../../00-brief/deck-67coffee.pdf pg
+# Sumber gambar sudah dihapus dari VPS. Ambil ulang deck dari R2 mote-team berkas/65bec3cd-793b-47a2-9f62-3dab6c4c5360.pdf, lalu: mkdir -p ../05-aset-brand/dari-deck && cd ../05-aset-brand/dari-deck && pdfimages -j deck.pdf pg
 # Satuan output = piksel crop asli (crop 1100,745 di halaman 1920x1080)
 import subprocess,re,os,json
 from PIL import Image,ImageFilter
