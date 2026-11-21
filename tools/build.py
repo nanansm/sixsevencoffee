@@ -113,7 +113,7 @@ main{flex:1;padding-bottom:52px}
 .pita{background:var(--marun);color:var(--krem);overflow:hidden;padding:16px 0;border-top:1px solid var(--marun)}
 .jalur{display:flex;width:max-content;animation:jalan 48s linear infinite}
 .jalur svg{width:46px;height:46px;margin:0 19px;flex:none}
-@keyframes jalan{to{transform:translateX(-50%)}}
+@keyframes jalan{to{transform:translateX(-1008px)}}  /* 1 set = 12 ikon x (46+38)px; 5 set menutup layar s.d. 4000px tanpa celah */
 /* kaki: jalan Cisangkuy malam */
 .kaki{background:var(--kalio);color:var(--krem);text-align:center;padding:0 0 26px}
 .jalan{display:flex;align-items:flex-end;justify-content:center;gap:26px;padding:56px 0 0;border-bottom:1.5px solid rgba(243,233,216,.55);position:relative;color:var(--krem)}
@@ -141,7 +141,7 @@ LD = json.dumps({"@context":"https://schema.org","@type":"CafeOrCoffeeShop","nam
     "sameAs":[L['INSTAGRAM']]}, ensure_ascii=False)
 
 URUT = ['cup','es','vdrip','filter','biji','rendang','pagi','malam','lampu','kedai','vespa','kartu']
-PITA = ''.join(kk(n) for n in URUT) * 2
+PITA = ''.join(kk(n) for n in URUT) * 5
 
 HTML = f'''<!doctype html>
 <html lang="id">
